@@ -1,6 +1,21 @@
-type ExampleEntity @entity {
-  id: ID!
-  count: BigInt!
-  owner: Bytes! # address
-  approved: Bytes! # address
+type ApprovalEntity @entity {
+	id: ID!
+	count: BigInt!
+	owner: Bytes! # address
+	approved: Bytes! # address
+	tokenId: BigInt! # uint256
+}
+
+type ApprovalForAllEntity @entity {
+	id: ID!
+	owner: Bytes! # address
+	operator: Bytes! # address
+	approved: Bytes! # address
+}
+
+type TransferEntity @entity {
+	id: ID!
+	from: Bytes! # address
+	to: Bytes! # address
+	tokenId: BigInt! # uint256
 }

@@ -1,7 +1,7 @@
 {
-  "rinkeby": {
-    "AssetGlobal": {
-      "address": "0x9D4C8Ee703BC7B7F269C8128487d1bB4ffD29454"
-    }
-  }
+	"rinkeby": {
+		"AssetGlobal": {
+			"address": "0x9D4C8Ee703BC7B7F269C8128487d1bB4ffD29454"
+		}
+	}
 }

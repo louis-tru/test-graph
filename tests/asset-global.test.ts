@@ -7,7 +7,7 @@ import {
   afterAll
 } from "matchstick-as/assembly/index"
 import { Address, BigInt } from "@graphprotocol/graph-ts"
-import { ExampleEntity } from "../generated/schema"
+import { ApprovalEntity } from "../generated/schema"
 import { Approval } from "../generated/AssetGlobal/AssetGlobal"
 import { handleApproval } from "../src/asset-global"
 import { createApprovalEvent } from "./asset-global-utils"
@@ -33,24 +33,24 @@ describe("Describe entity assertions", () => {
   // For more test scenarios, see:
   // https://thegraph.com/docs/en/developer/matchstick/#write-a-unit-test
 
-  test("ExampleEntity created and stored", () => {
-    assert.entityCount("ExampleEntity", 1)
+  test("ApprovalEntity created and stored", () => {
+    assert.entityCount("ApprovalEntity", 1)
 
     // 0xa16081f360e3847006db660bae1c6d1b2e17ec2a is the default address used in newMockEvent() function
     assert.fieldEquals(
-      "ExampleEntity",
+      "ApprovalEntity",
       "0xa16081f360e3847006db660bae1c6d1b2e17ec2a",
       "owner",
       "0x0000000000000000000000000000000000000001"
     )
     assert.fieldEquals(
-      "ExampleEntity",
+      "ApprovalEntity",
       "0xa16081f360e3847006db660bae1c6d1b2e17ec2a",
       "approved",
       "0x0000000000000000000000000000000000000001"
     )
     assert.fieldEquals(
-      "ExampleEntity",
+      "ApprovalEntity",
       "0xa16081f360e3847006db660bae1c6d1b2e17ec2a",
       "tokenId",
       "234"
