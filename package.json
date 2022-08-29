@@ -1,5 +1,6 @@
 {
 	"name": "test-graph",
+	"version": "0.1.0",
 	"license": "UNLICENSED",
 	"scripts": {
 		"codegen": "graph codegen",
